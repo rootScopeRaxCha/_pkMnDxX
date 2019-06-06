@@ -1,0 +1,80 @@
+<header>
+		<nav class="navbar navbar-static-bottom navbar-inverse mynav" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header ">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+						<span class="sr-only">Menú</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a ui-sref="login" class="navbar-brand" ng-click="changeTitleHome">Poke-Api</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a ui-sref="login" ng-click="changeTitleHome()"><i class="fas fa-home"></i>Login</a>
+						</li>
+						<li class="">
+							<a ui-sref="pokeapi" ng-click="changeTitleJuegos()"><i class="fas fa-dot-circle"></i>Pokedex</a>
+						</li>
+						<li>
+							<a ui-sref="register" ng-click="changeTitleBlog()"><i class="fas fa-registered"></i>Registro</a>
+						</li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Categorías <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a ui-sref="login" ng-click="changeTitleJuegos()">Login</a>
+								</li>
+								<li>
+									<a ui-sref="pokeapi" ng-click="changeTitleHome()">pokeApi</a>
+								</li>
+								<li>
+									<a ui-sref="register" ng-click="changeTitleHome()">Registro</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="¿Qué estas buscando?">
+							<button type="button" class="btn btn-info"><i class="fas fa-search"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+<div ui-view class="login">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12 hola"></div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<!-- FS-->
+				<form class="loginbox">
+					<div class="form-group">
+						<div class="cont-img">
+							<img src="../img/favicon.png" class="img-responsive pokeball">
+						</div>
+						<label for="exampleInputEmail1">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Contraseña</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Recuerdame
+						</label>
+					</div>
+					<button type="submit" class="btn btn-success btn-block" ng-click="tamanio()">Iniciar sesión</button>
+				</form>
+				<!--FE-->
+			</div>
+		</div>
+	</div>
+</div>

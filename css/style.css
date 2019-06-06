@@ -1,0 +1,132 @@
+/* Style for pages */
+.login {
+  background: url('../img/bg-01.jpg')no-repeat center;
+  background-size: cover;
+  height: 750px;
+	font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.loginbox {
+  padding: 100px 60px;
+  margin-top: 20vh;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 7px 10px 16px 9px rgba(255,255,255,0.4);
+  -moz-box-shadow: 7px 10px 16px 9px rgba(255,255,255,0.4);
+  box-shadow: 7px 10px 16px 9px rgba(255,255,255,0.4);
+  border-radius: 61px 61px 61px 61px;
+  -moz-border-radius: 61px 61px 61px 61px;
+  -webkit-border-radius: 61px 61px 61px 61px;
+  border: 10px solid #000000;
+}
+
+/*Animate for Angular*/
+.animate-repeat {
+  line-height:30px;
+  box-sizing:border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  transition:all linear 0.5s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:30px;
+}
+
+.mynav {
+	margin-bottom: 0;
+}
+
+.pokeball {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: -52%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.pokeball {
+  animation: down 1s alternate infinite;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+.pokeballr {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: -60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.pokeballr {
+  animation: downs 1s alternate infinite;
+}
+
+@keyframes downs {
+  0% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+@media(max-height: 760px) {
+  .pokeball {
+    top: -46%;
+  }
+}
+
+.pokeSearch {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.imgPokemon {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: #22b9ca;
+  border: 1px solid #000;
+}
+
+.pokeImg {
+  width: auto;
+  height: 200px;
+}
+
+.namePokemon {
+  border: 1px solid #000;
+  padding: 2% 0;
+  margin: 0 0 2% 0;
+  background: #0c99c1;
+  color: #fff;
+}
